@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     var randomDiceIndex1: Int = 0
     var randomDiceIndex2: Int = 0
+    let diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
     @IBOutlet weak var diceImage1: UIImageView!
     @IBOutlet weak var diceImage2: UIImageView!
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
         print("dice 1: \(randomDiceIndex1)")
         print("dice 2: \(randomDiceIndex2)")
         
+        diceImage1.image = UIImage(named: diceArray[randomDiceIndex1])
+        diceImage2.image = UIImage(named: diceArray[randomDiceIndex2])
         
     }
     
